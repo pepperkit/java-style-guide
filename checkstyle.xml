@@ -24,7 +24,7 @@
     <property name="fileExtensions" value="java"/>
 
     <!-- License Checks -->
-    
+
     <module name="Header">
         <property name="ignoreLines" value="4,5,6,7,8,9,10,11,12,13"/>
     </module>
@@ -61,7 +61,7 @@
             <property name="target" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
         <module name="JavadocMethod">
-            <property name="scope" value="public"/>
+            <property name="accessModifiers" value="public"/>
             <property name="allowMissingParamTags" value="true"/>
             <property name="allowMissingReturnTag" value="true"/>
             <property name="allowedAnnotations" value="Override, Test, Bean, ApiOperation, ExceptionHandler, ApiModelProperty"/>
