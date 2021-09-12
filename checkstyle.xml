@@ -29,6 +29,11 @@
         <property name="ignoreLines" value="4,5,6,7,8,9,10,11,12,13"/>
     </module>
 
+    <module name="LineLength">
+        <property name="max" value="120"/>
+        <property name="ignorePattern" value="^ *\* *[^ ]+$|^package.*|^import.*"/>
+    </module>
+    
 <!--
     <module name="RegexpHeader">
         <property name="header" value="" />
@@ -47,11 +52,6 @@
     </module>
 
     <module name="TreeWalker">
-
-        <module name="LineLength">
-            <property name="max" value="120"/>
-            <property name="ignorePattern" value="^ *\* *[^ ]+$|^package.*|^import.*"/>
-        </module>
 
         <!-- Checks for Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
