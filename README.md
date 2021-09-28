@@ -71,13 +71,13 @@ plugins {
     id 'checkstyle'
 }
 
-Be aware of current versions or any compitible versions.
 checkstyle {
     toolVersion '8.42'
     config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-8.45/checkstyle.xml"))
 }
 ```
-It executes in build task automatically.
+Be aware of current versions or any compitible versions.
+It executes in the build task automatically.
 
 ## Versioning
 When this style guide is changed, its version increases, it follows semver logic. However, to highlight with which
