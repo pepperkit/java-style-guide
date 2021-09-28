@@ -36,6 +36,7 @@ static analysis into the Continuous Integration pipeline, which can be done with
 - [Apache Maven Checkstyle Plugin](https://maven.apache.org/plugins/maven-checkstyle-plugin/)
 - [Gradle Checkstyle Plugin](https://docs.gradle.org/current/userguide/checkstyle_plugin.html)
 
+### Apache Maven
 Then the plugin could be configured in the following way (for Maven):
 ```xml
     <plugins>
@@ -61,6 +62,22 @@ Then the plugin could be configured in the following way (for Maven):
     </plugins>
 ```
 Be aware of current versions.
+
+
+### Gradle
+Include [Checstyle Plugin](https://docs.gradle.org/current/userguide/checkstyle_plugin.html) in the head of `build.gradle` file.
+```
+plugins {
+    id 'checkstyle'
+}
+
+Be aware of current versions or any compitible versions.
+checkstyle {
+    toolVersion '8.42'
+    config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-8.45/checkstyle.xml"))
+}
+```
+It executes in build task automatically.
 
 ## Versioning
 When this style guide is changed, its version increases, it follows semver logic. However, to highlight with which
