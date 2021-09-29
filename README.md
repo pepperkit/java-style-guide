@@ -63,7 +63,6 @@ Then the plugin could be configured in the following way (for Maven):
 ```
 Be aware of current versions.
 
-
 ### Gradle
 Include [Checstyle Plugin](https://docs.gradle.org/current/userguide/checkstyle_plugin.html) in the head of `build.gradle` file.
 ```
@@ -303,23 +302,22 @@ public class Cat implements Animal
 ```
 
 #### Line breaks with operators and expressions
-If the expression's length exceeds **120 symbols**, delimiters (commas, operators, etc.) should be left at the end of the line, 
-and not be moved to the next line. Exception - in the method call, like *Builder Pattern*, *Java Streams*.
-In lambda expressions `-> {` should be left on the first line.
+If the expression's length exceeds **120 symbols**, delimiters (commas, operators, etc.) should be moved to the next line
+to improve readability. In lambda expressions `-> {` should be left on the first line.
 
 ##### if example
 Correct:
 ```java
-if (veryImportantFlagWithLongName == true && theLineIsLongerThanShouldBe == true &&
-        importantObject.isPresent() == false) {
+if (veryImportantFlagWithLongName == true && theLineIsLongerThanShouldBe == true
+        && importantObject.isPresent() == false) {
         
 }
 ```
 
 Incorrect:
 ```java
-if (veryImportantFlagWithLongName == true && theLineIsLongerThanShouldBe == true
-        && importantObject.isPresent() == false) {
+if (veryImportantFlagWithLongName == true && theLineIsLongerThanShouldBe == true &&
+        importantObject.isPresent() == false) {
 
 }
 ```
