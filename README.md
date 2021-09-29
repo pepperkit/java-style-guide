@@ -540,7 +540,7 @@ All tags should follow the order:
  * @throws UnsupportedOperationException if an extension of the file is not supported
  * @see TxtFileReader
  */
-public static BookFileReader createInstance(final File bookFile) {
+public static BookFileReader createInstance(File bookFile) {
 }
 ```
 
@@ -577,11 +577,12 @@ CatTest.java
 ```
 
 #### Integration Tests
-Integration test class name should end with postfix `IT`.
+Integration test class name should end with postfix `IT` or `IntegrationTest`.
 
 Example of integration test on class `Cat.java`:
 ```
 CatIT.java
+CatIntegrationTest.java
 ```
 
 #### Recommendations on Naming Test Methods
