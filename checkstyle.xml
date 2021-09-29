@@ -170,7 +170,7 @@
         <module name="NestedTryDepth">
             <property name="max" value="2"/>
         </module>
-        <!-- TODO: Необходимо тоже ввести ограничение -->
+        <!-- TODO: Need to set a limit -->
         <module name="ParameterNumber"/>
 
 
