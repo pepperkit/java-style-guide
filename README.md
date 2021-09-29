@@ -404,25 +404,6 @@ Semantically different blocks of code should be separated by an empty line.
     browser.requestFocus();
 ```
 
-#### Class Declaration
-Try to do your best to write keywords `implements`, `extends` on the same line with the keyword `class`.
-
-Correct:
-```java
-public class Cat extends
-    Animal {
-
-}
-```
-
-Incorrect:
-```java
-public final class Cat 
-    extends Animal {
-
-}
-```
-
 ### Naming
 
 #### Classes
