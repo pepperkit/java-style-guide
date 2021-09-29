@@ -170,7 +170,7 @@ The license should be put in each source code file in a header.
 #### An example of full license text
 ```java
  /*
- * Copyright (C) 2021 Arthur Aukhatov
+ * Copyright (C) 2021 PepperKit
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -189,7 +189,7 @@ The license should be put in each source code file in a header.
 #### An example of shortened license text
  ```java
 /*
- * Copyright (C) 2021 Arthur Aukhatov
+ * Copyright (C) 2021 PepperKit
  *
  * This software may be modified and distributed under the terms
  * of the MIT license. See the LICENSE file for details.
