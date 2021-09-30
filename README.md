@@ -52,7 +52,7 @@ Then the plugin could be configured in the following way (for Maven):
                 </dependency>
             </dependencies>
             <configuration>
-                <configLocation>https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-9.0/checkstyle.xml</configLocation>
+                <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.0-9.0/checkstyle.xml</configLocation>
                 <encoding>UTF-8</encoding>
                 <consoleOutput>true</consoleOutput>
                 <failsOnError>true</failsOnError>
@@ -63,13 +63,13 @@ Then the plugin could be configured in the following way (for Maven):
 ```
 Be aware of current versions.
 
-### Supressions
+### Suppressions
 Checkstyle allows the definition of a list of files and their line ranges that should be suppressed from reporting any violations see [Using a Suppressions Filter](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/suppressions-filter.html).
 
 Update the plugin configuration like that:
 ```xml
 <configuration>
-    <configLocation>https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-9.0/checkstyle.xml</configLocation>
+    <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.0-9.0/checkstyle.xml</configLocation>
     <encoding>UTF-8</encoding>
     <consoleOutput>true</consoleOutput>
     <failsOnError>true</failsOnError>
@@ -102,7 +102,7 @@ plugins {
 
 checkstyle {
     toolVersion '8.42'
-    config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-8.45/checkstyle.xml"))
+    config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.0-8.45/checkstyle.xml"))
 }
 ```
 Be aware of current versions or any compitible versions.
