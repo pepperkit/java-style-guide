@@ -63,6 +63,36 @@ Then the plugin could be configured in the following way (for Maven):
 ```
 Be aware of current versions.
 
+### Supressions
+Checkstyle allows the definition of a list of files and their line ranges that should be suppressed from reporting any violations see [Using a Suppressions Filter](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/suppressions-filter.html).
+
+Update the plugin configuration like that:
+```xml
+<configuration>
+    <configLocation>https://raw.githubusercontent.com/pepperkit/checkstyle/v1.0.0-9.0/checkstyle.xml</configLocation>
+    <encoding>UTF-8</encoding>
+    <consoleOutput>true</consoleOutput>
+    <failsOnError>true</failsOnError>
+    <linkXRef>false</linkXRef>
+    <suppressionsLocation>suppressions.xml</suppressionsLocation>
+</configuration>
+```
+
+#### suppressions.xml
+```xml
+<?xml version="1.0"?>
+ 
+<!DOCTYPE suppressions PUBLIC
+     "-//Checkstyle//DTD SuppressionFilter Configuration 1.0//EN"
+     "https://checkstyle.org/dtds/suppressions_1_0.dtd">
+ 
+<suppressions>
+  <suppress checks="ImportOrder" files="\.java"/>
+  <suppress checks="javadoc" files="\.java"/>
+  <suppress checks="LineLength" files="\.java"/>
+</suppressions>
+```
+
 ### Gradle
 Include [Checstyle Plugin](https://docs.gradle.org/current/userguide/checkstyle_plugin.html) in the head of `build.gradle` file.
 ```
