@@ -1,6 +1,6 @@
 # Java Style Guide
 ![Version](https://img.shields.io/badge/Latest%20Version-v1.0.1--9.1-blue)
-![Checkstyle](https://img.shields.io/badge/Checkstyle%20Compatible-v9.1-green)
+![Checkstyle](https://img.shields.io/badge/Checkstyle%20Compatible-v9.2-green)
 
 Java style guide built upon Sun Microsystems and Google style guides, widely accepted best practices. Is offered in 
 form of a textual representation, as well as `Checkstyle` and `Intellij IDEA` declarations for automation purposes.
@@ -48,7 +48,7 @@ Then the plugin could be configured in the following way (for Maven):
                 <dependency>
                     <groupId>com.puppycrawl.tools</groupId>
                     <artifactId>checkstyle</artifactId>
-                    <version>9.1</version>
+                    <version>9.2</version>
                 </dependency>
             </dependencies>
             <configuration>
