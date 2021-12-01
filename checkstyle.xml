@@ -24,9 +24,10 @@
     <property name="fileExtensions" value="java"/>
 
     <!-- License Checks -->
-
     <module name="Header">
-        <property name="ignoreLines" value="4,5,6,7,8,9,10,11,12,13"/>
+        <!-- License should be present, no limitations on the license text -->
+        <property name="header" value="/*"/>
+        <property name="ignoreLines" value="2,3,4,5,6,7,8,9,10,11,12,13"/>
     </module>
 
     <module name="LineLength">
