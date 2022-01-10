@@ -1,5 +1,5 @@
 # Java Style Guide
-![Version](https://img.shields.io/badge/Latest%20Version-v1.0.1--9.1-blue)
+![Version](https://img.shields.io/badge/Latest%20Version-v1.0.2--9.2-blue)
 ![Checkstyle](https://img.shields.io/badge/Checkstyle%20Compatible-v9.2.1-green)
 
 Java style guide built upon Sun Microsystems and Google style guides, widely accepted best practices. Is offered in 
@@ -52,7 +52,7 @@ Then the plugin could be configured in the following way (for Maven):
                 </dependency>
             </dependencies>
             <configuration>
-                <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.1-9.1/checkstyle.xml</configLocation>
+                <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.2-9.2/checkstyle.xml</configLocation>
                 <encoding>UTF-8</encoding>
                 <consoleOutput>true</consoleOutput>
                 <failsOnError>true</failsOnError>
@@ -69,7 +69,7 @@ Checkstyle allows the definition of a list of files and their line ranges that s
 Update the plugin configuration like that:
 ```xml
 <configuration>
-    <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.1-9.1/checkstyle.xml</configLocation>
+    <configLocation>https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.2-9.2/checkstyle.xml</configLocation>
     <encoding>UTF-8</encoding>
     <consoleOutput>true</consoleOutput>
     <failsOnError>true</failsOnError>
@@ -101,8 +101,8 @@ plugins {
 }
 
 checkstyle {
-    toolVersion '8.42'
-    config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.1-9.1/checkstyle.xml"))
+    toolVersion '9.2.1'
+    config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.2-9.2/checkstyle.xml"))
 }
 ```
 Be aware of current versions or any compitible versions.
@@ -113,8 +113,8 @@ When this style guide is changed, its version increases, it follows semver logic
 version of Checkstyle this style guide is compatible, the corresponding version of Checkstyle is stated in the version of 
 the style guide.
 
-For example, if the style guide has version `1.0.1` and it is compatible with Checkstyle version `9.1`, then the version
-of Checkstyle file will be `v1.0.1-9.1`.
+For example, if the style guide has version `1.0.2` and it is compatible with Checkstyle version `9.2`, then the version
+of Checkstyle file will be `v1.0.2-9.2`.
 
 ## Style Guide
 
