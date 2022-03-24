@@ -151,15 +151,12 @@
         <module name="UnusedImports">
             <property name="processJavadoc" value="true"/>
         </module>
-        <module name="ImportOrder">
-            <property name="groups" value="java,/^javax?\./,*"/>
-            <property name="ordered" value="true"/>
-            <property name="separated" value="true"/>
-            <property name="option" value="bottom"/>
-            <property name="separatedStaticGroups" value="true"/>
-            <property name="sortStaticImportsAlphabetically" value="true"/>
+        <module name="CustomImportOrder">
+            <property name="customImportOrderRules"
+                      value="STANDARD_JAVA_PACKAGE###THIRD_PARTY_PACKAGE###SAME_PACKAGE(2)###STATIC"/>
+            <property name="separateLineBetweenGroups" value="true"/>
+            <property name="sortImportsInGroupAlphabetically" value="true"/>
         </module>
-
 
         <!-- Checks for Size Violations. -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
