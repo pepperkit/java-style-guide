@@ -48,7 +48,7 @@ Then the plugin could be configured in the following way (for Maven):
                 <dependency>
                     <groupId>com.puppycrawl.tools</groupId>
                     <artifactId>checkstyle</artifactId>
-                    <version>10</version>
+                    <version>10.12.0</version>
                 </dependency>
             </dependencies>
             <configuration>
@@ -101,7 +101,7 @@ plugins {
 }
 
 checkstyle {
-    toolVersion '10.12'
+    toolVersion '10.12.0'
     config project.resources.text.fromUri(new URI("https://raw.githubusercontent.com/pepperkit/java-style-guide/v1.0.2-9.2/checkstyle.xml"))
 }
 ```
